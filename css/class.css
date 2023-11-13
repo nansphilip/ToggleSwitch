@@ -1,0 +1,40 @@
+.mot {
+    font-size: 2rem;
+    font-weight: 500;
+
+    user-select: none;
+    margin-right: 1rem;
+}
+
+.switch {
+    height: 2rem;
+    width: 4rem;
+
+    border-radius: 1rem;
+    background-color: lightgray;
+    box-shadow: gray 0px 0px 3px;
+}
+
+.toggle {
+    height: 1.5rem;
+    width: 1.5rem;
+    
+    position: relative;
+    top: 4px;
+    left: 4px;
+    
+    background-color: white;
+    border-radius: 0.75rem;
+}
+
+.active {
+    background-color: deepskyblue;
+}
+
+.active > div {
+    left: calc(2.5rem - 4px);
+}
+
+.switch, .toggle, .active, .active > div {
+    transition: 300ms;
+}

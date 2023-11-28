@@ -14,27 +14,54 @@
     background-color: lightgray;
     box-shadow: gray 0px 0px 3px;
 }
+@keyframes mochi {
+
+    0%,
+    100% {
+        transform: scaleX(1.0) scaleY(1.0);
+    }
+
+    50% {
+        transform: scaleX(1.5) scaleY(0.75);
+    }
+}
+@keyframes mochichi {
+
+    0%,
+    100% {
+        transform: scaleX(1.0) scaleY(1.0);
+    }
+
+    50% {
+        transform: scaleX(1.5) scaleY(0.75);
+    }
+}
 
 .toggle {
     height: 1.5rem;
     width: 1.5rem;
-    
+
     position: relative;
     top: 4px;
     left: 4px;
-    
+
     background-color: white;
     border-radius: 0.75rem;
+    animation: 200ms mochi ease-in-out;
 }
 
 .active {
     background-color: deepskyblue;
 }
 
-.active > div {
+.active>div {
     left: calc(2.5rem - 4px);
+    animation: 200ms mochichi ease-in-out;
 }
 
-.switch, .toggle, .active, .active > div {
+.switch,
+.toggle,
+.active,
+.active>div {
     transition: 300ms;
 }

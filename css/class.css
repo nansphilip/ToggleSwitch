@@ -18,22 +18,30 @@
 
     0%,
     100% {
-        transform: scaleX(1.0) scaleY(1.0);
+        transform: translateX(0px) scaleX(1) scaleY(1);
     }
 
     50% {
-        transform: scaleX(1.5) scaleY(0.75);
+        transform: translateX(0px) scaleX(1.5) scaleY(0.75);
+    }
+
+    75% {
+        transform: translateX(-8px) scaleX(0.75) scaleY(1);
     }
 }
 @keyframes mochichi {
 
     0%,
     100% {
-        transform: scaleX(1.0) scaleY(1.0);
+        transform: translateX(0px) scaleX(1) scaleY(1);
     }
 
     50% {
-        transform: scaleX(1.5) scaleY(0.75);
+        transform: translateX(0px) scaleX(1.5) scaleY(0.75);
+    }
+
+    75% {
+        transform: translateX(8px) scaleX(0.75) scaleY(1);
     }
 }
 
@@ -47,7 +55,7 @@
 
     background-color: white;
     border-radius: 0.75rem;
-    animation: 200ms mochi ease-in-out;
+    animation: 230ms mochi ease-in-out;
 }
 
 .active {
@@ -56,7 +64,7 @@
 
 .active>div {
     left: calc(2.5rem - 4px);
-    animation: 200ms mochichi ease-in-out;
+    animation: 230ms mochichi ease-in-out;
 }
 
 .switch,

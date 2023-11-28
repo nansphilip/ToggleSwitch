@@ -14,34 +14,36 @@
     background-color: lightgray;
     box-shadow: gray 0px 0px 3px;
 }
+
 @keyframes mochi {
 
     0%,
     100% {
         transform: translateX(0px) scaleX(1) scaleY(1);
     }
-
-    50% {
+    
+    40% {
         transform: translateX(0px) scaleX(1.5) scaleY(0.75);
     }
 
-    75% {
-        transform: translateX(-8px) scaleX(0.75) scaleY(1);
+    70% {
+        transform: translateX(-6px) scaleX(0.8) scaleY(1);
     }
 }
+
 @keyframes mochichi {
 
     0%,
     100% {
         transform: translateX(0px) scaleX(1) scaleY(1);
     }
-
-    50% {
+    
+    40% {
         transform: translateX(0px) scaleX(1.5) scaleY(0.75);
     }
 
-    75% {
-        transform: translateX(8px) scaleX(0.75) scaleY(1);
+    70% {
+        transform: translateX(6px) scaleX(0.8) scaleY(1);
     }
 }
 
@@ -55,7 +57,8 @@
 
     background-color: white;
     border-radius: 0.75rem;
-    animation: 230ms mochi ease-in-out;
+
+    animation: 200ms mochi ease-in-out;
 }
 
 .active {
@@ -64,12 +67,12 @@
 
 .active>div {
     left: calc(2.5rem - 4px);
-    animation: 230ms mochichi ease-in-out;
+    animation: 200ms mochichi ease-in-out;
 }
 
 .switch,
 .toggle,
 .active,
 .active>div {
-    transition: 300ms;
+    transition: 200ms;
 }

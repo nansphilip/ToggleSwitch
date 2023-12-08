@@ -15,7 +15,7 @@
     box-shadow: gray 0px 0px 3px;
 }
 
-@keyframes mochi {
+@keyframes forward {
 
     0%,
     100% {
@@ -31,7 +31,7 @@
     }
 }
 
-@keyframes mochichi {
+@keyframes backward {
 
     0%,
     100% {
@@ -58,7 +58,7 @@
     background-color: white;
     border-radius: 0.75rem;
 
-    animation: 200ms mochi ease-in-out;
+    animation: 200ms forward ease-in-out;
 }
 
 .active {
@@ -67,7 +67,7 @@
 
 .active>div {
     left: calc(2.5rem - 4px);
-    animation: 200ms mochichi ease-in-out;
+    animation: 200ms backward ease-in-out;
 }
 
 .switch,
